@@ -1,2 +1,5 @@
 # find-youtube-playlist-length
-Find the length of youtube playlist with the help of youtube data api
+Find the total length of youtube playlist videos with the help of youtube data api.
+
+
+App deplopyed to an heroku and can be accessed at : https://youtube-playlist-length-finder.herokuapp.com/
