@@ -2,13 +2,13 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-playlist_time = "24 mins"
+
 import os
 import re
 from datetime import timedelta
 from googleapiclient.discovery import build
 
-pl_id = "PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo"
+pl_id = "enter any playlist id to check without youtube api (for testing purpose only)"
 api_key = 'ENTER_YOUR_API_KEY_HERE'
 
 youtube = build('youtube', 'v3', developerKey=api_key)
@@ -20,7 +20,7 @@ seconds_pattern = re.compile(r'(\d+)S')
 
 @app.route("/")
 def hello():
-    return render_template("test.html")
+    return render_template("index.html")
 
 
 @app.route("/", methods=['POST'])
