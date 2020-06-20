@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Playlist</title>
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+   <style>
+
+   img.resize {
+  width:200px;
+  height:40px;
+}
+body{
+font-family:sans-serif;
+}
+.form-horizontal{
+  max-width:520px;
+  margin:1rem auto;
+
+  padding: 0.25rem;
+
+  }
+
+
+  .mb-8 leading-relaxed{
+  margin:2rem auto;
+  }
+  label{
+    display:block;
+    padding:0.75rem 0 .5rem;
+    text-transform:uppercase;
+    font-size:12px;
+
+  }
+  input{
+    display:block;
+    width:100%;
+    border:2px solid #298089;
+    padding:0.5rem;
+    font-size:12px;
+    border-radius:5px;
+
+  }
+ #message{
+display:block;
+    width:100%;
+    border:2px solid #298089;
+    padding:0.5rem;
+    font-size:12px;
+    border-radius:5px;
+
+}
+  #singlebutton{
+  border:0;
+  background:#343050;
+  padding:0.5rem;
+  color:white;
+  margin:0.5rem 0;
+  width:auto;
+  border-radius:5px;
+  cursor:pointer;
+  cursor: pointer;
+  float: center;
+
+
+  }
+
+h1 {
+    text-align:center;
+}
+
+  </style>
+
+
+</head>
+
+
+
+
+ <body>
+<header class="text-gray-700 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+
+    </nav>
+    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Youtube Playlist </span>
+    </a>
+    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      <button onClick="parent.location='https://www.github.com'" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Github
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+
+    </div>
+
+  </div>
+     <h1 style="text-align:center">Find The Length of Youtube Playlist</h1>
+</header>
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+   <img src="https://cdn.onlinewebfonts.com/svg/img_501895.png" width="150" height="150" alt="Computer Hope">
+    <div class="text-center lg:w-2/3 w-full">
+
+      <form class="form-horizontal" action="." method ="post">
+<!-- Form Name -->
+<!-- Text input-->
+<div class="form-group">
+
+  <div class="col-md-5">
+    <label class="col-md-4 control-label" for="plinput">URL</label>
+  <input id="plinput" name="plinput" type="text" placeholder="Enter Youtube Playlist URL Like: playlist?list=ID" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Find</button>
+  </div>
+</div>
+<label for = "message">Message </label>
+<textarea id="message" placeholder="Time in Hours,Seconds,Minutes">
+{{errormessage}} {{h}} :Hours  {{m}} :Minutes {{s}} :Seconds
+</textarea>
+
+</form>
+
+    </div>
+  </div>
+</section>
+
+
+ <footer class="text-gray-700 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">tailblocks</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Made By Shahbaaz —
+      <a href="https://linkedin.com/in/mohammed-shahbaaz-shareef-74765119a" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Shahbaaz</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
